@@ -16,7 +16,7 @@ NUM_JOBS: 20
 JOB: ${{ matrix.go }}
 steps:
 - name: Set up Go ${{ matrix.go }}
-uses: actions/setup-go@v1
+uses: actions/setup-go@v2
 with:
 go-version: ${{ matrix.go }}
 id: go
